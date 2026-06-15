@@ -1,0 +1,17 @@
+def enc(t, s):
+    r = ""
+    for c in t:
+        if c.isalpha():
+            a = 65 if c.isupper() else 97
+            r += chr((ord(c) - a + s) % 26 + a)
+        else:
+            r += c
+    return r
+def dec(t, s):
+    return enc(t, -s)
+m = input("Enter message: ")
+s = int(input("Enter shift value: "))
+e = enc(m, s)
+print("Encrypted Text:", e)
+d = dec(e, s)
+print("Decrypted Text:", d)
