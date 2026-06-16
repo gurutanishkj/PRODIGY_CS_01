@@ -15,8 +15,8 @@ Features
 
 How It Works
 
-- "encrypt()" function shifts each alphabet character forward by the given shift value.
-- "decrypt()" function shifts the characters backward to retrieve the original message.
+- "ce()" function shifts each alphabet character forward by the given shift value.
+- "cd()" function shifts the characters backward to retrieve the original message.
 - Uppercase and lowercase letters are handled separately.
 - Non-alphabetic characters remain unchanged.
 
@@ -38,12 +38,12 @@ Example
 
 Input
 
-Enter message: Subbu Lakshmi
+Enter message: Gurutanish
 
-Enter shift value: 3
+Enter shift value: 6
 
 Output
 
-Encrypted text: Vxeex Odnvkpl
+Encrypted text: Maxazgtoyn
 
-Decrypted text: Subbu Lakshmi
+Decrypted text: Gurutanish
