@@ -1,43 +1,49 @@
-Caesar Cipher Encryption and Decryption in Python
-Prodigy InfoTech Cyber Security Internship – Task 01
+# PRODIGY_CS_01
+Caesar Cipher encryption and decryption implementation in Python - Prodigy InfoTech Cyber Security Internship Task 01
+
+
 Description
 
-This project implements the Caesar Cipher algorithm using Python. The program encrypts a message by shifting each alphabetic character by a user-defined shift value and then decrypts it back to the original message.
+A Python program that encrypts and decrypts text using the Caesar Cipher algorithm.
 
 Features
-Encrypts text using a shift value.
-Decrypts encrypted text back to the original message.
-Supports both uppercase and lowercase letters.
-Preserves spaces, numbers, and special characters.
-Simple and easy-to-understand implementation.
-How the Code Works
-Encryption Function - ce(x, y)
-x stores the input message.
-y stores the shift value.
-Each character in the message is checked.
-If the character is a letter, it is shifted forward by the given value.
-If the character is not a letter, it remains unchanged.
-ASCII Conversion
-ord() converts a character into its ASCII value.
-chr() converts an ASCII value back into a character.
-65 represents the ASCII value of uppercase 'A'.
-97 represents the ASCII value of lowercase 'a'.
-Modulo Operation
-% 26 ensures that the alphabet wraps around correctly.
-Example:
-Z shifted by 1 becomes A.
-z shifted by 1 becomes a.
-Decryption Function - cd(x, y)
-Uses the encryption function with a negative shift value.
-Restores the encrypted text back to the original message.
+
+- Encrypts plaintext using a shift value.
+- Decrypts ciphertext back to the original message.
+- Supports both uppercase and lowercase letters.
+- Preserves spaces, numbers, and special characters.
+
+How It Works
+
+- "encrypt()" function shifts each alphabet character forward by the given shift value.
+- "decrypt()" function shifts the characters backward to retrieve the original message.
+- Uppercase and lowercase letters are handled separately.
+- Non-alphabetic characters remain unchanged.
+
+Code Explanation
+
+- "ord(char)" converts a character into its ASCII value.
+- "% 26" ensures circular shifting (after Z comes A).
+- "chr()" converts the ASCII value back into a character.
+
 Technologies Used
-Python 3
+
+- Python 3
+
 How to Run
+
 python caesar_cipher.py
+
 Example
+
 Input
-Enter message: gurutanish
-Enter shift value: 6
+
+Enter message: Subbu Lakshmi
+
+Enter shift value: 3
+
 Output
-Encrypted Text: maxazgtoyn
-Decrypted Text: gurutanish
+
+Encrypted text: Vxeex Odnvkpl
+
+Decrypted text: Subbu Lakshmi
