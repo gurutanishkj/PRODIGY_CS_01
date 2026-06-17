@@ -32,7 +32,7 @@ Technologies Used
 
 How to Run
 
-python caesar_cipher.py
+python caesar program.py
 
 Example
 
